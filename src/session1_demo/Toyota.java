@@ -17,5 +17,6 @@ protected int price;
         //System.out.println("year:"+typeCar);
         //System.out.println("");
 
+
     }
 }

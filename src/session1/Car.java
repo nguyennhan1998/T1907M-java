@@ -1,14 +1,16 @@
 package session1;
 
 public class Car {
-    protected int year=2015;
+    protected int year = 2015;
 
     public int getYear() {
         return year;
     }
-public Car(){
 
-}
+    public Car() {
+
+    }
+
     public Car(int year, String typeCar, String brand) {
         this.year = year;
         this.typeCar = typeCar;
@@ -35,10 +37,11 @@ public Car(){
         this.typeCar = typeCar;
     }
 
-    protected  String typeCar="autoCar";
-    protected String brand="Auto";
-    public void getInfo(){
-        System.out.println("brand: "+brand);
+    protected String typeCar = "autoCar";
+    protected String brand = "Auto";
+
+    public void getInfo() {
+        System.out.println("brand: " + brand);
     }
 
 }
