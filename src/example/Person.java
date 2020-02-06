@@ -1,8 +1,17 @@
 package example;
 
 public class Person {
-    private String name;
-    private String birthday;
+   private String name;
+   private  String birthday;
+//   public Person(String name,String birthday){
+////       this.name=name;
+////       this.birthday=birthday;
+////   }
+    public Person (){
+        name=null;
+        birthday= null;
+    }
+
     public void setName(String name){
         this.name=name;
 
@@ -14,6 +23,6 @@ public class Person {
         return name;
     }
     public String toString(){
-        return name+" "+birthday;
+        return "name is "+ name+", birthday  "+birthday;
     }
 }
