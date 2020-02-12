@@ -5,7 +5,7 @@ public class MixedUp {
         A a= new A();
         B b= new B();
         C c= new C();
-        A a2= new C();
+       // A a2= new C();
        // b.m1();
        // c.m2();
         a.m3();
@@ -25,7 +25,7 @@ class A{
         System.out.println(" A's m3, ");
     }
 }
-class B extends A{
+class B {
     void m1(){
         System.out.println(" B's m1, ");
     }
