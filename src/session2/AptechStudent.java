@@ -1,6 +1,6 @@
 package session2;
 
-public class AptechStudent extends Student implements StudentInterface ,HumanInteface{
+public class AptechStudent extends Student implements StudentInterface ,HumanInterface{
 
     public void showInfo(){
         System.out.println("show student");

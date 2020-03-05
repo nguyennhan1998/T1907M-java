@@ -2,6 +2,8 @@ package session1;
 
 public class Car {
     protected int year = 2015;
+    protected String typeCar = "autoCar";
+    protected String brand = "Auto";
 
     public int getYear() {
         return year;
@@ -37,8 +39,6 @@ public class Car {
         this.typeCar = typeCar;
     }
 
-    protected String typeCar = "autoCar";
-    protected String brand = "Auto";
 
     public void getInfo() {
         System.out.println("brand: " + brand);

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assignment5.List" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="lsView" layoutX="33.0" layoutY="151.0" prefHeight="336.0" prefWidth="545.0" />
+      <Text layoutX="210.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sach sinh vien" wrappingWidth="191.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button onAction="#form" layoutX="501.0" layoutY="44.0" mnemonicParsing="false" text="+" />
+   </children>
+</Pane>

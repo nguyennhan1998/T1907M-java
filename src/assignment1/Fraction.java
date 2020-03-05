@@ -53,7 +53,7 @@ public int ucln(){
         int ucln=1;
         for(int i=1;i<=Math.min(ts,ms);i++){
             if(ts%i==0&&ms%i==0){
-                ucln=1;
+                ucln=i;
             }
         }
         return ucln;
@@ -73,10 +73,22 @@ public Fraction addFraction(Fraction fr){
   rs.setTu_so(this.getTu_so()*fr.getMau_so()+this.getMau_so()*fr.getTu_so());
   return  rs;
 }
-public Fraction subFraction(Fraction fr){
+public Fraction subtractFraction(Fraction fr){
         Fraction rs= new Fraction();
         rs.setMau_so(this.getMau_so()*fr.getMau_so());
         rs.setTu_so(this.getTu_so()*this.getMau_so()*fr.getMau_so());
         return rs;
 }
+    public Fraction multiFraction(Fraction fr){
+        Fraction rs= new Fraction();
+        rs.setMau_so(this.getMau_so()*fr.getMau_so());
+        rs.setTu_so(this.getTu_so()*fr.getTu_so());
+        return rs;
+    }
+    public Fraction divideFraction(Fraction fr){
+       Fraction rs= new Fraction();
+        rs.setTu_so(this.getTu_so()/fr.getMau_so());
+        rs.setMau_so(this.getMau_so()*fr.getTu_so());
+        return rs;
+    }
 }

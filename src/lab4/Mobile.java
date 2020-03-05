@@ -72,8 +72,10 @@ public class Mobile <S,T,N>{
         LocalDate kt= LocalDate.of(x,2,28);
         LocalDate nextDay=kt.plusDays(1);
         if(nextDay.getDayOfMonth()==29){
-            //nam nhuan
+            System.out.println("day la nam nhuan");
 
+        }else{
+            System.out.println("day la nam khong nhuan");
         }
 
 
