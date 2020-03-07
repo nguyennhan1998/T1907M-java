@@ -1,4 +1,4 @@
-package assignment6;
+package assignment6fix;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -14,20 +14,24 @@ public class Main extends Application {
         launch(args);
     }
     public static Stage productStage;
-    public static ObservableList cart= FXCollections.observableArrayList();
+    public static ObservableList<Product> cart= FXCollections.observableArrayList();
 
     @Override
     public void start(Stage primaryStage) {
         productStage=primaryStage;
         try{
-            Parent root= FXMLLoader.load(getClass().getResource("list.fxml"));
-            primaryStage.setTitle("nhap thong tin san pham");
-            primaryStage.setScene(new Scene(root,800,600));
+            Parent root= FXMLLoader.load(getClass().getResource("listproduct.fxml"));
+            primaryStage.setTitle("manage products");
+            primaryStage.setScene(new Scene(root,600,400));
             primaryStage.show();
 
+
+
         }catch (Exception e){
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
+
+
 
     }
 }

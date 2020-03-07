@@ -1,16 +1,14 @@
-package assignment6;
-
-import javafx.fxml.Initializable;
-import jdk.internal.org.objectweb.asm.tree.InnerClassNode;
+package assignment6fix;
 
 public class Product {
-    private Integer id;
-    private String name;
-    private String description;
-    private double price;
-    private Integer quantity;
+    Integer id;
+    String name;
+    String description;
+    Double price;
+    Integer quantity;
 
-    public Product(Integer id, String name, String description, double price, Integer quantity) {
+    public Product(Integer id, String name, String description, Double price, Integer quantity) {
+
         this.id = id;
         this.name = name;
         this.description = description;
@@ -45,11 +43,11 @@ public class Product {
         this.description = description;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
