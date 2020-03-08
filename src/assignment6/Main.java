@@ -14,7 +14,7 @@ public class Main extends Application {
         launch(args);
     }
     public static Stage productStage;
-    public static ObservableList cart= FXCollections.observableArrayList();
+    public static ObservableList<Product> cart= FXCollections.observableArrayList();
 
     @Override
     public void start(Stage primaryStage) {

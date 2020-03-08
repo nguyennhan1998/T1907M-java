@@ -1,4 +1,6 @@
 package assignment6fix;
+import  connector.Connector;
+
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,17 +19,10 @@ public class List implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
          try{
-             Class.forName("com.mysql.jdbc.Driver");
-             //step 3
-             String url="jdbc:mysql://localhost:3306/T1907m";
-             String username="root";
-             String password="";
-             //step 4
-             Connection conn= DriverManager.getConnection(url,username,password);
-             //queru sql
-             String sql_text="select * from products";
-             Statement stm=conn.createStatement();
-             ResultSet rs=stm.executeQuery(sql_text);
+             String sql_text = "SELECT * FROM products";
+             Connector connector = Connector.getInstance();
+             ResultSet rs = connector.getQuery(sql_text);
+
              ObservableList ls= FXCollections.observableArrayList();
              while(rs.next()){
               Product p= new Product(rs.getInt("id"),rs.getString("name"),rs.getString("description"),rs.getDouble("price"),rs.getInt("quantity"));

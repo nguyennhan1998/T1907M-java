@@ -32,7 +32,7 @@ public class Form {
             Student s= new Student(name,age,mark);
             String sql_text="INSERT INTO students(name,age,mark) VALUES('"+name+"',"+age+","+mark+")";
             Statement stm= conn.createStatement();
-           int row_number= stm.executeUpdate(sql_text);
+            int row_number= stm.executeUpdate(sql_text);
             if(row_number>0){
                 //chuyen ve man hinh danh sach
                 Parent list= FXMLLoader.load(getClass().getResource("list.fxml"));
