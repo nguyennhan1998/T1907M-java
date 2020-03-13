@@ -16,7 +16,7 @@ public class Main {
             switch (a) {
 
                 case 1:
-                    System.out.println("nhap vao so dien thoai");
+                    System.out.println("nhap vao ten ");
                     String name = sc.nextLine();
                     System.out.println("nhap vao dia chi cong ty");
                     String company = sc.nextLine();

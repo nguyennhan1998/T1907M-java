@@ -32,7 +32,7 @@ public class AddressBook {
 
     }
     public void displayContact(){
-        System.out.println("name     company        mail         phone");
+        System.out.println("my contact list");
         for(Contact p:contactList){
             System.out.println(p.getName()+"   "+p.getCompany()+"   "+p.getEmail()+"    "+p.getPhone());
         }
