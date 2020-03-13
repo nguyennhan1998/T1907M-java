@@ -49,9 +49,8 @@ public class PhoneBook extends Phone {
     public PhoneNumber searchPhone(String name) {
         for(PhoneNumber p:phoneList){
             if(p.name.equals(name)){
-                if(p.name.equals(name)){
                     return p;
-                }
+
             }
         }return null;
 
