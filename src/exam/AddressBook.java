@@ -9,11 +9,11 @@ public class AddressBook {
 
     public void addContact(String name, String company, String email, String phone) {
         for (Contact p : contactList) {
-            if (p.name.equals(name)) {
-                if (p.phone.equals(phone)) {
+            if (p.getName().equals(name)) {
+                if (p.getPhone().equals(phone)) {
                     return;
                 }
-                p.phone = p.phone + ":" + phone;
+                p.phone = p.getPhone() + ":" + phone;
                 return;
             }
         }
@@ -22,7 +22,7 @@ public class AddressBook {
     }
     public Contact searchContact(String name){
         for(Contact p:contactList){
-            if(p.name.equals(name)){
+            if(p.getName().equals(name)){
                 if(p.getName().equals(name)){
                     return p;
                 }
@@ -34,7 +34,7 @@ public class AddressBook {
     public void displayContact(){
         System.out.println("name     company        mail         phone");
         for(Contact p:contactList){
-            System.out.println(p.name+"   "+p.company+"   "+p.email+"    "+p.phone);
+            System.out.println(p.getName()+"   "+p.getCompany()+"   "+p.getEmail()+"    "+p.getPhone());
         }
     }
 
